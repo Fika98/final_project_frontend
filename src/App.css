@@ -1,50 +1,9 @@
-/* .App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-
+         /* NavBar */
 
 .flex{
-  /* display: flex;
-  float: left */
   display: flex;
   flex-wrap: wrap;
-  /* width: 100%; */
   align-items: flex-start;
   justify-content: center;
 }
@@ -52,7 +11,6 @@
 .space{
   margin: 4px;
 }
-
 
 
 ul.navBar {
@@ -67,6 +25,7 @@ ul.navBar {
 
 ul.navBar li {
   float: left;
+  font-size: 20px;
 }
 
 ul.navBar li a {
@@ -125,8 +84,6 @@ ul.navBar li a:hover {
 
 }
 
-
-
 /* sideBar */
 
 ul.sideBar li a {
@@ -138,8 +95,6 @@ ul.sideBar li a {
 }
 
 
-
-
 ul.sideBar {
   list-style-type: none;
   margin-right: 100px;
@@ -147,12 +102,6 @@ ul.sideBar {
   
 }
 
-
-
-.button{
-  /* background-color: gray; */
-  font-size: small;
-}
 
 
 .formName{
@@ -164,33 +113,159 @@ ul.sideBar {
   color: gray;
 }
 
-.imgItem{
-  width: 230px;
-  height: 230px;
-}
 
-/* .placeOrder{
-  font-size: large;
-  margin-left: 400px;
-} */
-
-.deleteItem{
-  margin-left: 200px;
-  background-color: gray;
-}
 
 .orderbtn{
   width: 100px;
   height: 25px;
 }
 
-.qty{
-  width: 25px;
-  height: 25px;
-}
+
 
 .input{
   margin-top: 19px;
   border-radius: 70px;
   height: 20px;
 }
+                  /* CartItem */
+
+
+.CartItem{
+   display: flex;
+   border-bottom: 1px solid #DDD;
+   padding-bottom: 60px;
+   padding-top: 12px;
+}
+
+
+.CartItems{
+   flex: 0.7;
+   background-color: white;;
+   margin-right: 20px;
+   text-align: left;
+   padding: 0px;
+}
+
+
+.CartItem-image{
+   width: 200px;
+   height: 200px;
+   flex-grow: 0;
+   flex-shrink: 0;
+   margin-right: 16px;
+}
+
+.CartItem-image img{
+   object-fit: contain;
+   width: 100%;
+}
+
+
+.CartItem-Info{
+   flex-grow: 1;
+}
+
+.info-title h2{
+   margin: 0;
+   font-size: 18px;
+   color: #007185;
+}
+
+
+.item-actions {
+   margin-top: 4px;
+   display: flex;
+   align-items: center;
+}
+.CartItem-price{
+   font-size: 18px;
+   font-weight: 700;
+   margin-left: 16px;
+
+}
+
+.item-quantity select{
+   background: #F0F2F2;
+   padding: 8px;
+   border-radius: 7px;
+   box-shadow: 0px 2px 5px 0px rgba(15,17,17,0,0.15);
+}
+
+.item-quantity select:focus{
+   outline: none;
+}
+.item-actions-divider{
+   margin-left: 8px;
+   margin-right: 8px;
+   color: #DDDDDD;
+   font-weight: bold;
+}
+
+.item-delete {
+   color: #007185;
+   cursor: pointer;
+}
+
+.item-delete:hover{
+   text-decoration: underline
+}
+
+
+.CartTotal{
+   display: flex;
+   margin-left: 20px;
+   margin-top: 20px;
+}
+
+
+.product-list{
+   flex: .8;
+   background-color: #EAEDED;
+   
+}
+.order-product{
+   flex: .2;
+   
+}
+               /* CartTotal */
+
+
+.CartTotal button{
+   background-color: #f0c14b;
+   font-size: 20px;
+   width: 100%;
+   border-radius: 4px;
+   border: 2px, solid #a88734;
+   cursor: pointer;
+   margin-left: 30px;
+}
+
+.CartTotal button:hover{
+   background-color: #ddb347;
+
+}
+
+.CartTotal button:focus{
+   outline: none;
+}
+
+.CartTotal-price {
+   margin-left: 30px;
+}
+
+.itemss {
+   margin-left: 30px;
+}
+
+.App-main{
+   display:flex;
+   padding: 14px 18px 0 18px;
+   align-items: flex-start;
+}
+
+
+
+
+
+
+

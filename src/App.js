@@ -1,15 +1,15 @@
 import React from 'react';
-import ItemContainer from './ItemContainer';
-import NavBar from './NavBar'
+import ItemContainer from './Components/ItemContainer';
+import NavBar from './Components/NavBar'
 // import ItemSideBar from './ItemSideBar'
 import {Switch, Route} from 'react-router-dom'
-import Form from './Form'
+import Form from './Components/Form'
 
-import OrderContainer from './OrderContainer'
+import OrderContainer from './Components/OrderContainer'
 // import ItemCo from './ItemCo'
-import {withRouter, Redirect} from 'react-router-dom'
-import PlaceAnOrder from './PlaceAnOrder'
 
+import {withRouter, Redirect} from 'react-router-dom'
+import PlaceAnOrder from './Components/PlaceAnOrder'
 
 import './App.css';
 
@@ -213,13 +213,8 @@ class App extends React.Component {
       />
     }
 
-
-
-
-
-
   render() {
-    console.log(this.state.items)
+   //  console.log(this.state.items)
     return (
       <div>
         <NavBar

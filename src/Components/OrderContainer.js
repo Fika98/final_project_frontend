@@ -23,12 +23,28 @@ const OrderContainer = (props) => {
 
         // console.log("from www", props)
     return(
+      
+        <div className="CartTotal">
+           <div className="product-list">
+            {arrayOfComponent()}
+           </div>
 
-        <div>
-             {arrayOfComponent()}
-             <h2>Your Total Is: ${priceCollector}</h2> <br/>
-             <button className="orderbtn" onClick = {() => props.history.push("/placeOrder")}>place an Order </button>            
-        </div>
+           <div className="order-products">
+            <h3 className ="itemss">{props.orders.length - 1} Items Selected</h3>
+           <h3> 
+                
+                <span className="CartTotal-price">
+                Total:${priceCollector}
+               </span> 
+             </h3>
+
+
+             <button onClick = {() => props.history.push("/placeOrder")}>place an Order </button>
+          </div>
+             
+                
+             </div>       
+
     )
 
 }

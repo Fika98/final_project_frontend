@@ -34,7 +34,7 @@ const NavBar = (props) => {
             <NavLink to="/logout">Log Out</NavLink>
           </li>
         <li>
-        <NavLink to="/cart">cart</NavLink>
+        <NavLink to="/cart">Cart</NavLink>
         </li>
       </ul>
       )
